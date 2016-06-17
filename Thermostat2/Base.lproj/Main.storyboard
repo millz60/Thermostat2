@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,104 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="DcT-v1-k4N">
+                                <rect key="frame" x="18" y="52" width="564" height="31"/>
+                                <connections>
+                                    <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="tUi-Pr-NXz"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Slider to Set Temperature" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBr-vX-U3N">
+                                <rect key="frame" x="192" y="90" width="217" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="dk0-Nt-DoR"/>
+                                    <constraint firstAttribute="height" constant="21" id="otd-Gt-cbE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Setting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sT9-mB-c3B">
+                                <rect key="frame" x="233" y="182" width="135" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Bob-SM-6Wf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="FMb-O0-H4N">
+                                <rect key="frame" x="121" y="385" width="359" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="359" id="Mbt-py-Yrt"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Fahrenheit"/>
+                                    <segment title="Celsius"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="33U-cW-pcg"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YoK-Qr-Aq5">
+                                <rect key="frame" x="156" y="211" width="289" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="0Bb-rf-jid"/>
+                                    <constraint firstAttribute="height" constant="70" id="ufe-eG-eiD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Current Temperature: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkX-MN-Hcd">
+                                <rect key="frame" x="166" y="469" width="268" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="268" id="4iI-Xk-HBs"/>
+                                    <constraint firstAttribute="height" constant="21" id="aHy-B2-jn7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-BoldItalic" family="Iowan Old Style" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select A Unit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUX-F0-bBI">
+                                <rect key="frame" x="180" y="498" width="240" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="TOj-e4-doS"/>
+                                    <constraint firstAttribute="width" constant="240" id="W09-cX-tyE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-BoldItalic" family="Iowan Old Style" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sT9-mB-c3B" firstAttribute="centerX" secondItem="YoK-Qr-Aq5" secondAttribute="centerX" id="FgB-0b-Vd6"/>
+                            <constraint firstItem="yUX-F0-bBI" firstAttribute="top" secondItem="GkX-MN-Hcd" secondAttribute="bottom" constant="8" symbolic="YES" id="HiI-4B-dxY"/>
+                            <constraint firstItem="oBr-vX-U3N" firstAttribute="centerX" secondItem="sT9-mB-c3B" secondAttribute="centerX" id="Jjr-lb-eNV"/>
+                            <constraint firstItem="sT9-mB-c3B" firstAttribute="top" secondItem="oBr-vX-U3N" secondAttribute="bottom" constant="71" id="Lnz-qG-tXE"/>
+                            <constraint firstItem="GkX-MN-Hcd" firstAttribute="top" secondItem="FMb-O0-H4N" secondAttribute="bottom" constant="56" id="PD7-lo-frY"/>
+                            <constraint firstItem="FMb-O0-H4N" firstAttribute="centerX" secondItem="GkX-MN-Hcd" secondAttribute="centerX" id="QtY-2t-s0m"/>
+                            <constraint firstItem="GkX-MN-Hcd" firstAttribute="centerX" secondItem="yUX-F0-bBI" secondAttribute="centerX" id="Qzm-KO-vqX"/>
+                            <constraint firstItem="DcT-v1-k4N" firstAttribute="centerX" secondItem="oBr-vX-U3N" secondAttribute="centerX" id="Tjk-ao-yg8"/>
+                            <constraint firstItem="DcT-v1-k4N" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="VLI-hh-ue5"/>
+                            <constraint firstItem="oBr-vX-U3N" firstAttribute="top" secondItem="DcT-v1-k4N" secondAttribute="bottom" constant="8" symbolic="YES" id="fRU-4H-esC"/>
+                            <constraint firstItem="YoK-Qr-Aq5" firstAttribute="centerX" secondItem="FMb-O0-H4N" secondAttribute="centerX" id="r3t-HF-Qc6"/>
+                            <constraint firstItem="DcT-v1-k4N" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rLZ-0Z-WBW"/>
+                            <constraint firstItem="DcT-v1-k4N" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="32" id="rgk-iE-2TG"/>
+                            <constraint firstItem="YoK-Qr-Aq5" firstAttribute="top" secondItem="sT9-mB-c3B" secondAttribute="bottom" constant="8" symbolic="YES" id="vjV-Ud-3Dc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="yUX-F0-bBI" secondAttribute="bottom" constant="33" id="ynO-wk-iGM"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentTemp" destination="yUX-F0-bBI" id="yhQ-8h-VvC"/>
+                        <outlet property="tempControl" destination="DcT-v1-k4N" id="TN4-ER-7HK"/>
+                        <outlet property="tempDisplay" destination="YoK-Qr-Aq5" id="kYE-8K-4RJ"/>
+                        <outlet property="unitSelector" destination="FMb-O0-H4N" id="wFX-I4-hj8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="245" y="337"/>
         </scene>
     </scenes>
 </document>

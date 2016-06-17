@@ -1,6 +1,6 @@
 //
 //  AppDelegate.h
-//  Thermostat2
+//  Thermostat
 //
 //  Created by Matt Milner on 6/16/16.
 //  Copyright © 2016 Matt Milner. All rights reserved.
