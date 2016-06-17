@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C926E01F1D13796F005367F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C926E01E1D13796F005367F7 /* main.m */; };
+		C926E0221D13796F005367F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C926E0211D13796F005367F7 /* AppDelegate.m */; };
+		C926E0251D13796F005367F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C926E0241D13796F005367F7 /* ViewController.m */; };
+		C926E0281D13796F005367F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C926E0261D13796F005367F7 /* Main.storyboard */; };
+		C926E02A1D13796F005367F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C926E0291D13796F005367F7 /* Assets.xcassets */; };
+		C926E02D1D13796F005367F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C926E02B1D13796F005367F7 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C926E01A1D13796F005367F7 /* Thermostat2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Thermostat2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C926E01E1D13796F005367F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C926E0201D13796F005367F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C926E0211D13796F005367F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C926E0231D13796F005367F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C926E0241D13796F005367F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C926E0271D13796F005367F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C926E0291D13796F005367F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C926E02C1D13796F005367F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C926E02E1D13796F005367F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C926E0171D13796F005367F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C926E0111D13796F005367F7 = {
+			isa = PBXGroup;
+			children = (
+				C926E01C1D13796F005367F7 /* Thermostat2 */,
+				C926E01B1D13796F005367F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C926E01B1D13796F005367F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C926E01A1D13796F005367F7 /* Thermostat2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C926E01C1D13796F005367F7 /* Thermostat2 */ = {
+			isa = PBXGroup;
+			children = (
+				C926E0201D13796F005367F7 /* AppDelegate.h */,
+				C926E0211D13796F005367F7 /* AppDelegate.m */,
+				C926E0231D13796F005367F7 /* ViewController.h */,
+				C926E0241D13796F005367F7 /* ViewController.m */,
+				C926E0261D13796F005367F7 /* Main.storyboard */,
+				C926E0291D13796F005367F7 /* Assets.xcassets */,
+				C926E02B1D13796F005367F7 /* LaunchScreen.storyboard */,
+				C926E02E1D13796F005367F7 /* Info.plist */,
+				C926E01D1D13796F005367F7 /* Supporting Files */,
+			);
+			path = Thermostat2;
+			sourceTree = "<group>";
+		};
+		C926E01D1D13796F005367F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C926E01E1D13796F005367F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C926E0191D13796F005367F7 /* Thermostat2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C926E0311D13796F005367F7 /* Build configuration list for PBXNativeTarget "Thermostat2" */;
+			buildPhases = (
+				C926E0161D13796F005367F7 /* Sources */,
+				C926E0171D13796F005367F7 /* Frameworks */,
+				C926E0181D13796F005367F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Thermostat2;
+			productName = Thermostat2;
+			productReference = C926E01A1D13796F005367F7 /* Thermostat2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C926E0121D13796F005367F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matt Milner";
+				TargetAttributes = {
+					C926E0191D13796F005367F7 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C926E0151D13796F005367F7 /* Build configuration list for PBXProject "Thermostat2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C926E0111D13796F005367F7;
+			productRefGroup = C926E01B1D13796F005367F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C926E0191D13796F005367F7 /* Thermostat2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C926E0181D13796F005367F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C926E02D1D13796F005367F7 /* LaunchScreen.storyboard in Resources */,
+				C926E02A1D13796F005367F7 /* Assets.xcassets in Resources */,
+				C926E0281D13796F005367F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C926E0161D13796F005367F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C926E0251D13796F005367F7 /* ViewController.m in Sources */,
+				C926E0221D13796F005367F7 /* AppDelegate.m in Sources */,
+				C926E01F1D13796F005367F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C926E0261D13796F005367F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C926E0271D13796F005367F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C926E02B1D13796F005367F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C926E02C1D13796F005367F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C926E02F1D13796F005367F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C926E0301D13796F005367F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C926E0321D13796F005367F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Thermostat2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.Thermostat2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C926E0331D13796F005367F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Thermostat2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theironyard.houston.Thermostat2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C926E0151D13796F005367F7 /* Build configuration list for PBXProject "Thermostat2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C926E02F1D13796F005367F7 /* Debug */,
+				C926E0301D13796F005367F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C926E0311D13796F005367F7 /* Build configuration list for PBXNativeTarget "Thermostat2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C926E0321D13796F005367F7 /* Debug */,
+				C926E0331D13796F005367F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C926E0121D13796F005367F7 /* Project object */;
+}
